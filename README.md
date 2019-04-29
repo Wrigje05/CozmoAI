@@ -41,7 +41,37 @@ Using AI with Anki Cozmo
 5) go to your user folder, such that you see "Desktop", "Contacts", "Favorites", "Pictures", etc.
 6) Create new folder "Android" (note: this is case-sensitive)
 7) Go inside "Android" folder
-8) from
+8) move over the downloaded "platform-tools-latest-windows.zip" into the "Android" folder, then extract all
+9) go into the folder "platform-tools-latest-windows" and go into the "platform-tools" folder
+10) right click start menu, select "system", "Advanced system settings", "Advanced", "evironment variables"
+11) "User variables for user" > "Path" > "edit"
+12) in "edit environment variable" > "new" > add path to adb
+- this should be in the format of "C:\Users\name\Android\platform-tools-latest-windows\platform-tools"
+13) click "ok" on everything
+
+- to double check you have it setup properly
+1) open "Command Prompt" > enter "adb" and enter
+
+- Final Installation step
+1) enable USB debugging on android device
+- find "build number" from "settings" > "about phone" and tap it 7 times
+- "settings" > "developer options" > "enable USB debugging" enable it
+2) connect phone to computer
+3) command prompt > "adb devices"
+4) with cozmo app running, connect phone to robot
+5) In app on phone, go to main menu > "settings" > "Cozmo SDK" > "Enable SDK"
+
+- Get some programs
+1) on computer developer site > go to "Downloads" page > "Windows SDK Examples"
+2) in command line > navigate to the folder you have the examples in (look for "Cosmo SDK examples" folder)
+3) Extract the files (remember where you extracted to)
+4) in command line, navigate to where you have "Cozmo SDK examples" and go to their tutorials
+
+- Run a code
+1) go to the program you want to run: ""cd 01_basics""
+- run "Hello World" program
+2)in command prompt
+
 
 #) To install OpenCV use the following: pip install openCV-python
 
